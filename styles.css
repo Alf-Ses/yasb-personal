@@ -1,0 +1,344 @@
+/* 
+This is default and very simple styles file for Yasb. 
+For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
+*/
+:root {
+    --background: rgba(19, 17, 18, 0.85);
+    --alt_icon: #A23B72;
+    --hover:var(--alt_icon);
+    --text: #F5F4F5;
+    --red: #C3423F;
+    --yellow: #FDE74C;
+    --green: #69B578;
+}
+/* Global styles for ToolTip */
+QToolTip {
+    padding: 6px;
+    color: #cdd6f4;
+    font-size: 12px;
+    background-color: var(--background);
+    border: 0px solid #313244;
+    border-radius: 6px;
+}
+* {
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 500;
+    font-family: "SF Pro Display", "MesloLGL Nerd Font Propo ";
+    margin: 0;
+    padding: 0;
+}
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+    border-radius: 0px;
+}
+.widget {
+    padding: 0 8px;
+    margin: 0;
+}
+.icon {
+    font-size: 16px;
+}
+.widget .label {
+    padding: 0px 4px;
+}
+
+/* GlazeWM */
+
+.glazewm-workspaces {
+	border-radius: 6px;
+}
+.glazewm-workspaces .ws-btn {
+
+    border: none;
+    padding: 0px 8px;
+}
+.glazewm-workspaces .ws-btn.active {
+
+    border-radius: 6px;
+    padding: 0px 8px;
+    background-color: var(--alt_icon);
+}
+.glazewm-workspaces .ws-btn:hover {
+    border-radius: 6px;
+    background-color: var(--alt_icon);
+}
+
+/* GlazeWM Tiling Button */
+
+.glazewm-tiling-direction {
+}
+.glazewm-tiling-direction .btn {
+    font-size: 18px;
+    width: 14px;
+    padding: 0 4px 0 4px;
+    color: #CDD6F4;
+    border: none;
+}
+.glazewm-tiling-direction .btn:hover {
+    border-radius: 6px;
+    padding: 0 4px 0 4px;
+    background-color: transparent;
+}
+/* Apps */
+
+.apps-widget {
+
+    padding: 0 4px 0 2px;
+}
+.apps-widget .label {
+
+    font-size: 14px;
+    padding: 0 2px;
+    color: var(--subtext0);
+}
+.apps-widget .label:hover {
+
+    color: var(--text);
+}
+
+/* Home */
+
+.home-widget {
+    padding: 0 12px;
+}
+.home-widget .btn {
+    color: var(--alt_icon);
+}
+.home-widget .icon {
+    color: var(--alt_icon);
+}
+.home-widget .icon:hover {}
+.home-menu {
+    background-color:rgba(17, 17, 27, 0.5); 
+}
+.home-menu .menu-item {
+    padding: 6px 48px 7px 16px;
+    font-size: 14px;
+    color: var(--text); 
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color:rgba(128, 130, 158, 0.15);
+    color: #fff;
+}
+.home-menu .separator {
+    max-height: 1px;
+    background-color:rgba(128, 130, 158, 0.3);
+}
+
+/* Microphone */
+
+.microphone-widget {
+
+    padding: 0 6px 0 6px;
+}
+.microphone-widget .icon {
+
+    font-size: 18px;
+}
+
+/* Volume */
+
+.volume-widget .icon {
+
+    color: var(--blue);
+    margin: 1px 2px 0 0;
+}
+.volume-widget {
+
+    padding: 0 6px;
+}
+
+/* Battery */
+
+.battery-widget {}
+.battery-widget .widget-container {}
+.battery-widget .widget-container .label {
+    font-size: 16px;
+    color: var(--subtext0);
+}
+.battery-widget .widget-container .icon {}
+.battery-widget .widget-container .icon.status-low {
+    color: var(--red);
+}
+.battery-widget .widget-container .icon.status-full {
+    color: var(--green);
+}
+.battery-widget .widget-container .icon.status-charging {
+    color: var(--yellow);
+}
+
+/* Wifi */
+
+.wifi-widget .icon {
+}
+
+/* Home */
+
+.home-widget {
+    padding: 0 4px 0 12px;
+}
+.home-widget .icon {
+    color: var(--text);
+}
+.home-widget .icon:hover {
+    color: var(--text);
+}
+.home-menu {
+    background-color: var(--crust);
+}
+.home-menu .menu-item {
+    padding: 8px 48px 9px 16px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color: rgba(128, 130, 158, 0.15);
+    color: #fff;
+}
+.home-menu:separator {
+    height: 1px;
+    background-color: rgba(128, 130, 158, 0.3);
+}
+
+/* Power Menu */
+/* 
+.power-menu-widget .label {
+
+    color: #f38ba8;
+    font-size: 13px;
+}
+.power-menu-popup {
+
+    background-color: transparent
+}
+.power-menu-popup .button {
+
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: var(--crust);
+    color: var(--text);
+    border-left: 4px solid rgba(58, 59, 83, 0);
+    border-right: 4px solid rgba(58, 59, 83, 0);
+    border-top: 4px solid rgba(58, 59, 83, 0);
+    border-bottom: 4px solid rgba(58, 59, 83, 0);
+    margin: 0px;
+}
+.power-menu-popup .button.hover {
+
+    background-color: var(--base);
+    border-left: 4px solid var(--base);
+    border-right: 4px solid var(--base);
+    border-top: 4px solid var(--base);
+    border-bottom: 4px solid var(--base);
+}
+
+.power-menu-popup .button .label {
+
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--overlay2)
+}
+.power-menu-popup .button .icon {
+
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--surface2)
+}
+
+.power-menu-popup .button.cancel .icon {
+
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+
+    color: var(--red);
+    margin: 0;
+}
+.power-menu-popup .button.cancel {
+
+    height: 32px;
+    border-radius: 4px;
+}
+.uptime {
+
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--surface2);
+    font-weight: 600;
+} */
+
+/* Media */
+/* 
+.media-widget {
+
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.media-widget .label {
+
+    color: #bac2db;
+    background-color: rgba(24, 24, 37, 0.7);
+    padding: 0px;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.media-widget .label.maintext {
+
+    padding-top: 3px;
+}
+.media-widget .btn {
+
+    color: #989caa;
+    padding: 0 1px;
+    margin: 0;
+    font-family: Segoe Fluent Icons;
+    font-weight: 400;
+}
+.media-widget .btn:hover {
+
+    color: #babfd3;
+}
+.media-widget .btn.play {
+
+    font-size: 16px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+
+    color: #4e525c;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+/* TaskBar */
+/* 
+.taskbar-widget {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.taskbar-widget .app-icon {
+    padding: 0 6px;
+    border: none;
+    margin: 0;
+} */
+
+/* Weather */
+/* 
+.weather-widget .icon {
+
+    font-size: 18px;
+    margin: 0 2px 1px 0;
+    color: var(--yellow);
+} */
